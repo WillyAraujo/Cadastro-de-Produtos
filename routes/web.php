@@ -21,6 +21,8 @@ Route::get('/categorias/editar/{id}', [ControladorCategoria::class, 'edit']);
 
 Route::post('/categorias/{id}', [ControladorCategoria::class, 'update']);
 
+Route::get('/api/categorias', [ControladorCategoria::class, 'indexJson']);
+
 
 // Rotas de produtos
 Route::get('/produtos', [ControladorProduto::class, 'index']);
